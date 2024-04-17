@@ -22,11 +22,19 @@
 }
 
 #linkborder a {
-    border: 1px solid transparent; /* Set a transparent border by default */
+    border: 1px solid transparent;
     border-radius: 2px;
     padding: 7px;
 }
 
 #linkborder a:hover {
-    border-color: #5a5a5a; /* Change the border color on hover */
+    border-color: #5a5a5a;
 }
+
+.card-width{
+    max-width: 50vw;
+    min-width: 260px;
+}
+
+
+
