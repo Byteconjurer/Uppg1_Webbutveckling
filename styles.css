@@ -1,16 +1,32 @@
-@import 'tailwindcss/base.css';
-@import 'tailwindcss/components.css';
-@import 'tailwindcss/utilities.css';
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html { 
-    background-color:darkslategray;
+.search-button{
+    background-color:#f9cd5c;
 }
 
+.header-background{
+    background-color: #272e3a;
+}
 
+.location-icon {
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/03/gno/sprites/nav-sprite-global_bluebeacon-2x_optimized_layout1._CB468502409_.png");
+    background-position: -68px -340px;
+    background-repeat: repeat no-repeat;
+    background-size: 350px;
+    height: 22px;
+    width: 22px;
+}
 
+#linkborder a {
+    border: 1px solid transparent; /* Set a transparent border by default */
+    border-radius: 2px;
+    padding: 7px;
+}
+
+#linkborder a:hover {
+    border-color: #5a5a5a; /* Change the border color on hover */
+}
