@@ -32,9 +32,12 @@
 }
 
 .card-width{
-    max-width: 50vw;
+    max-width: 30vw;
+    width: 12.5vw;
     min-width: 260px;
 }
+
+
 
 
 
