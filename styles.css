@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
     margin: 0;
     padding: 0;
@@ -8,9 +12,6 @@
     background-color:#f9cd5c;
 }
 
-.header-background{
-    background-color: #272e3a;
-}
 
 .location-icon {
     background-image: url("https://images-eu.ssl-images-amazon.com/images/G/03/gno/sprites/nav-sprite-global_bluebeacon-2x_optimized_layout1._CB468502409_.png");
@@ -32,11 +33,35 @@
 }
 
 .card-width{
-    max-width: 30vw;
-    width: 12.5vw;
-    min-width: 260px;
+ max-width: 50vw;
+ width:12.5vw;
+ min-width: 250px;
 }
 
+@media (min-width: 843px) {
+    .card-width{
+        max-width: 336px;
+        min-width: 250px;
+       }
+  }
+@media (min-width: 1383px) {
+    .card-width{
+        max-width: 302px;
+        min-width: 250px;
+       }
+  }
+@media (min-width: 1677px) {
+    .card-width{
+        max-width: 300px;
+        min-width: 250px;
+       }
+  }
+@media (min-width: 1937px) {
+    .card-width{
+        max-width: 300px;
+        min-width: 250px;
+       }
+  }
 
 
 

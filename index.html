@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Amazon Dating: The Future of Dating</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
 
         <!-- Header top row -->
-        <nav class="flex flex-row justify-between header-background pt-2">
+        <nav class="flex sm:flex-col full:flex-row full:justify-between bg-header-small full:bg-header-full pt-2">
 
             <div class="flex items-center mr-16">
                 <a href="/">
@@ -32,9 +33,11 @@
                 <input type="text" class="flex-grow h-9 px-2" value="&nbsp;hot singles near me">
                 <button class="search-button text-black text-sm pl-2 pr-4 py-1 rounded-r-md"><img width="28px;"
                         src="https://www.svgrepo.com/show/445988/search.svg"></button>
+                        
+                        <a href="/"><img src="cart_small.png" class="sm:block full:hidden -mt-10 ml-4" width="80px;" alt="cart"></a>
             </div>
 
-            <div class="flex items-center">
+            <div class="flex items-center sm:hidden full:flex">
                 <div class="leading-none -mt-2 mr-4 ml-8">
                     <span class="text-gray-400 text-xs font-semibold">Hello what is this</span> <br>
                     <span class="text-white text-md font-semibold">About?</span>
@@ -52,19 +55,22 @@
         </nav>
 
         <!-- Header bottom row -->
-        <nav class="flex flex-row justify-between header-background pt-2 pb-1.5">
+        <nav class="flex flex-row justify-between  bg-header-small  full:bg-header-full pt-2 pb-1.5">
 
             <div class="flex flex-shrink-0 items-center mr-16">
-
-                <div class="location-icon flex-shrink-0 ml-2">
+              
+             
+                <div class="location-icon flex-shrink-0 ml-2 sm:-mb-20 full:-mb-0">
                 </div>
 
-                <div class="leading-none flex-shrink-0 mr-4 ml-2">
-                    <span class="text-white text-xs">Deliver to</span> <br>
+                <div class="flex leading-none flex-shrink-0 mr-4 ml-2 sm:flex-row sm:-mb-20 full:-mb-0 full:flex-col">
+                    <span class="text-white text-xs mr-1">Deliver to</span> 
                     <span class="text-white text-sm font-semibold">Los Angeles 90069</span>
                 </div>
+              
+                
 
-                <div id="linkborder" class="flex gap-1 flex-shrink-0 text-gray-300 text-sm font-normal ml-16">
+                <div id="linkborder" class="flex gap-1 flex-shrink-0 full:text-gray-300 sm:text-white text-sm font-normal full:ml-16 sm:-ml-56">
                     <a href="/">Deal of the Day</a>
                     <a href="/">Prime Video</a>
                     <a href="/">Your Last Relationship</a>
@@ -82,18 +88,20 @@
     </header>
 
     <main>
-        
-        <div class="flex items-center h-14 shadow-md shadow-black pl-4 text-sm">
+
+      <div class=" h-9 w-full bg-header-small-border sm:flex full:hidden" ></div>
+
+        <div class="flex items-center h-14 shadow-md shadow-gray-200 pl-4 text-sm">
             1-50 of over 20,000 results for <span class="text-yellow-600 font-semibold">&nbsp;Hot Singles Near
                 You</span>
         </div>
         
         <!-- Profile Cards -->
-        <div class="flex gap-7 flex-wrap mt-9 ml-5" id="profiles">
+        <div class="flex gap-6 flex-wrap justify-start mt-7 ml-5" id="profiles">
             
-              <div class="bg-white shadow-md card-width flex-grow">
+              <div class="bg-white shadow-md card-width flex-grow tre:w-64">
                 <img src="heman.png" alt="heman" class=" h-auto">
-                <div class="p-4">
+                <div class="pb-4">
                   <span class="text-lg">Adam, 16</span>
                   <img src="rating.png" alt="rating" width="120px;" class="my-1">
                   <span class="text-lg">$5.99</span>
@@ -107,9 +115,9 @@
                 </div>
               </div>
 
-              <div class="bg-white shadow-md card-width flex-grow">
+              <div class="bg-white shadow-md card-width flex-grow tre:w-64">
                 <img src="heman.png" alt="heman" class=" h-auto">
-                <div class="p-4">
+                <div class="pb-4">
                   <span class="text-lg">Adam, 16</span>
                   <img src="rating.png" alt="rating" width="120px;" class="my-1">
                   <span class="text-lg">$5.99</span>
@@ -123,9 +131,9 @@
                 </div>
               </div>
 
-              <div class="bg-white shadow-md card-width flex-grow">
+              <div class="bg-white shadow-md card-width flex-grow tre:w-64">
                 <img src="heman.png" alt="heman" class=" h-auto">
-                <div class="p-4">
+                <div class="pb-4">
                   <span class="text-lg">Adam, 16</span>
                   <img src="rating.png" alt="rating" width="120px;" class="my-1">
                   <span class="text-lg">$5.99</span>
@@ -139,9 +147,9 @@
                 </div>
               </div>
 
-              <div class="bg-white shadow-md card-width flex-grow">
+              <div class="bg-white shadow-md card-width flex-grow tre:w-64">
                 <img src="heman.png" alt="heman" class=" h-auto">
-                <div class="p-4">
+                <div class="pb-4">
                   <span class="text-lg">Adam, 16</span>
                   <img src="rating.png" alt="rating" width="120px;" class="my-1">
                   <span class="text-lg">$5.99</span>
@@ -155,9 +163,9 @@
                 </div>
               </div>
 
-              <div class="bg-white shadow-md card-width flex-grow">
+              <div class="bg-white shadow-md card-width flex-grow tre:w-64">
                 <img src="heman.png" alt="heman" class=" h-auto">
-                <div class="p-4">
+                <div class="pb-4">
                   <span class="text-lg">Adam, 16</span>
                   <img src="rating.png" alt="rating" width="120px;" class="my-1">
                   <span class="text-lg">$5.99</span>
@@ -171,9 +179,9 @@
                 </div>
               </div>
 
-              <div class="bg-white shadow-md card-width flex-grow">
+              <div class="bg-white shadow-md card-width flex-grow tre:w-64">
                 <img src="heman.png" alt="heman" class=" h-auto">
-                <div class="p-4">
+                <div class="pb-4">
                   <span class="text-lg">Adam, 16</span>
                   <img src="rating.png" alt="rating" width="120px;" class="my-1">
                   <span class="text-lg">$5.99</span>
@@ -187,9 +195,9 @@
                 </div>
               </div>
 
-              <div class="bg-white shadow-md card-width flex-grow">
+              <div class="bg-white shadow-md card-width flex-grow tre:w-64">
                 <img src="heman.png" alt="heman" class=" h-auto">
-                <div class="p-4">
+                <div class="pb-4">
                   <span class="text-lg">Adam, 16</span>
                   <img src="rating.png" alt="rating" width="120px;" class="my-1">
                   <span class="text-lg">$5.99</span>
@@ -203,9 +211,9 @@
                 </div>
               </div>
 
-              <div class="bg-white shadow-md card-width flex-grow">
+              <div class="bg-white shadow-md card-width flex-grow tre:w-64">
                 <img src="heman.png" alt="heman" class=" h-auto">
-                <div class="p-4">
+                <div class="pb-4">
                   <span class="text-lg">Adam, 16</span>
                   <img src="rating.png" alt="rating" width="120px;" class="my-1">
                   <span class="text-lg">$5.99</span>
@@ -220,8 +228,6 @@
               </div>
 
               
-
-            <!-- Repeat these divs as needed -->
         </div>
                 
            
