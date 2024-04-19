@@ -22,6 +22,7 @@
     width: 22px;
 }
 
+
 #linkborder a {
     border: 1px solid transparent;
     border-radius: 2px;
@@ -34,13 +35,41 @@
 
 .card-width{
  max-width: 50vw;
- width:12.5vw;
+ width:10vw;
  min-width: 250px;
 }
 
+@media (max-width: 939px) {
+  .searchicon-small {
+    background-image: url("pictures/searchicon_small.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 0px) {
+    .card-width{
+        max-width: 90vw;
+        min-width: 90vw;
+       }
+  }
+@media (min-width: 609px) {
+    .card-width{
+        max-width: 45vw;
+        min-width: 45vw;
+       }
+  }
 @media (min-width: 843px) {
     .card-width{
         max-width: 336px;
+        min-width: 250px;
+       }
+  }
+@media (min-width: 1109px) {
+    .card-width{
+        max-width: 318px;
         min-width: 250px;
        }
   }
@@ -58,7 +87,7 @@
   }
 @media (min-width: 1937px) {
     .card-width{
-        max-width: 300px;
+        max-width: 288px;
         min-width: 250px;
        }
   }

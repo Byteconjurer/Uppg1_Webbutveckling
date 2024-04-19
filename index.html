@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bc4fe421a0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -29,12 +30,12 @@
             </div>
 
             <div class="flex-grow flex items-center">
-                <button class="bg-gray-300 text-black text-sm px-4 py-2 rounded-l-md">All</button>
-                <input type="text" class="flex-grow h-9 px-2" value="&nbsp;hot singles near me">
-                <button class="search-button text-black text-sm pl-2 pr-4 py-1 rounded-r-md"><img width="28px;"
+                <button class="bg-gray-300 text-black text-sm px-4 py-2 rounded-l-md sm:hidden full:flex">All</button>
+                <input type="text" class="searchicon-small flex-grow h-9 px-2" value="&nbsp;hot singles near me">
+                <button class="search-button text-black text-sm pl-2 pr-4 py-1 rounded-r-md sm:hidden full:flex"><img width="28px;"
                         src="https://www.svgrepo.com/show/445988/search.svg"></button>
                         
-                        <a href="/"><img src="cart_small.png" class="sm:block full:hidden -mt-10 ml-4" width="80px;" alt="cart"></a>
+                        <a href="/"><img src="pictures/cart_small.png" class="sm:block full:hidden -mt-10 ml-4" width="80px;" alt="cart"></a>
             </div>
 
             <div class="flex items-center sm:hidden full:flex">
@@ -47,7 +48,7 @@
                     <span class="text-white text-md font-semibold">Your Friends</span>
                 </div>
                 <div class="flex items-center ml-2 mr-3">
-                    <img width="45px;" src="cart.png">
+                    <img width="45px;" src="pictures/cart.png">
                     <span class="text-white text-md font-semibold ml-1">Cart</span>
                 </div>
             </div>
@@ -55,11 +56,9 @@
         </nav>
 
         <!-- Header bottom row -->
-        <nav class="flex flex-row justify-between  bg-header-small  full:bg-header-full pt-2 pb-1.5">
-
-            <div class="flex flex-shrink-0 items-center mr-16">
+        <nav class="block bg-header-small  full:bg-header-full pt-2 pb-1.5 overflow-hidden">
+            <div class="flex flex-shrink items-center mr-16">
               
-             
                 <div class="location-icon flex-shrink-0 ml-2 sm:-mb-20 full:-mb-0">
                 </div>
 
@@ -67,8 +66,6 @@
                     <span class="text-white text-xs mr-1">Deliver to</span> 
                     <span class="text-white text-sm font-semibold">Los Angeles 90069</span>
                 </div>
-              
-                
 
                 <div id="linkborder" class="flex gap-1 flex-shrink-0 full:text-gray-300 sm:text-white text-sm font-normal full:ml-16 sm:-ml-56">
                     <a href="/">Deal of the Day</a>
@@ -84,7 +81,6 @@
             </div>
         </nav>
 
-
     </header>
 
     <main>
@@ -94,139 +90,442 @@
         <div class="flex items-center h-14 shadow-md shadow-gray-200 pl-4 text-sm">
             1-50 of over 20,000 results for <span class="text-yellow-600 font-semibold">&nbsp;Hot Singles Near
                 You</span>
+                <i class="fa-solid fa-vr-cardboard text-indigo-700 text-xl ml-4"></i>
         </div>
         
         <!-- Profile Cards -->
         <div class="flex gap-6 flex-wrap justify-start mt-7 ml-5" id="profiles">
             
-              <div class="bg-white shadow-md card-width flex-grow tre:w-64">
-                <img src="heman.png" alt="heman" class=" h-auto">
+              <div class="bg-white shadow-md card-width flex-grow">
+                <img src="pictures/heman.png" alt="heman" class="h-auto">
                 <div class="pb-4">
                   <span class="text-lg">Adam, 16</span>
-                  <img src="rating.png" alt="rating" width="120px;" class="my-1">
+                  <img src="pictures/rating.png" alt="rating" width="120px;" class="my-1">
                   <span class="text-lg">$5.99</span>
                   <span class="text-xs text-gray-500 line-through">$1337.42</span>
                   
                   <span class="text-xs text-gray-500 flex items-center">
-                    <img class="-ml-1 mb-1" src="prime.png" width="60px;" alt="prime">
+                    <img class="-ml-1 mb-1" src="pictures/prime.png" width="60px;" alt="prime">
                      &nbsp; FREE One-Hour Delivery
                 </span>
                 <span class="text-xs text-gray-500">Meet Today</span>
                 </div>
               </div>
-
-              <div class="bg-white shadow-md card-width flex-grow tre:w-64">
-                <img src="heman.png" alt="heman" class=" h-auto">
+            
+              <div class="bg-white shadow-md card-width flex-grow">
+                <img src="pictures/heman.png" alt="heman" class="h-auto">
                 <div class="pb-4">
                   <span class="text-lg">Adam, 16</span>
-                  <img src="rating.png" alt="rating" width="120px;" class="my-1">
+                  <img src="pictures/rating.png" alt="rating" width="120px;" class="my-1">
                   <span class="text-lg">$5.99</span>
                   <span class="text-xs text-gray-500 line-through">$1337.42</span>
                   
                   <span class="text-xs text-gray-500 flex items-center">
-                    <img class="-ml-1 mb-1" src="prime.png" width="60px;" alt="prime">
+                    <img class="-ml-1 mb-1" src="pictures/prime.png" width="60px;" alt="prime">
                      &nbsp; FREE One-Hour Delivery
                 </span>
                 <span class="text-xs text-gray-500">Meet Today</span>
                 </div>
               </div>
-
-              <div class="bg-white shadow-md card-width flex-grow tre:w-64">
-                <img src="heman.png" alt="heman" class=" h-auto">
+            
+              <div class="bg-white shadow-md card-width flex-grow">
+                <img src="pictures/heman.png" alt="heman" class="h-auto">
                 <div class="pb-4">
                   <span class="text-lg">Adam, 16</span>
-                  <img src="rating.png" alt="rating" width="120px;" class="my-1">
+                  <img src="pictures/rating.png" alt="rating" width="120px;" class="my-1">
                   <span class="text-lg">$5.99</span>
                   <span class="text-xs text-gray-500 line-through">$1337.42</span>
                   
                   <span class="text-xs text-gray-500 flex items-center">
-                    <img class="-ml-1 mb-1" src="prime.png" width="60px;" alt="prime">
+                    <img class="-ml-1 mb-1" src="pictures/prime.png" width="60px;" alt="prime">
                      &nbsp; FREE One-Hour Delivery
                 </span>
                 <span class="text-xs text-gray-500">Meet Today</span>
                 </div>
               </div>
-
-              <div class="bg-white shadow-md card-width flex-grow tre:w-64">
-                <img src="heman.png" alt="heman" class=" h-auto">
+            
+              <div class="bg-white shadow-md card-width flex-grow">
+                <img src="pictures/heman.png" alt="heman" class="h-auto">
                 <div class="pb-4">
                   <span class="text-lg">Adam, 16</span>
-                  <img src="rating.png" alt="rating" width="120px;" class="my-1">
+                  <img src="pictures/rating.png" alt="rating" width="120px;" class="my-1">
                   <span class="text-lg">$5.99</span>
                   <span class="text-xs text-gray-500 line-through">$1337.42</span>
                   
                   <span class="text-xs text-gray-500 flex items-center">
-                    <img class="-ml-1 mb-1" src="prime.png" width="60px;" alt="prime">
+                    <img class="-ml-1 mb-1" src="pictures/prime.png" width="60px;" alt="prime">
                      &nbsp; FREE One-Hour Delivery
                 </span>
                 <span class="text-xs text-gray-500">Meet Today</span>
                 </div>
               </div>
-
-              <div class="bg-white shadow-md card-width flex-grow tre:w-64">
-                <img src="heman.png" alt="heman" class=" h-auto">
+            
+              <div class="bg-white shadow-md card-width flex-grow">
+                <img src="pictures/heman.png" alt="heman" class="h-auto">
                 <div class="pb-4">
                   <span class="text-lg">Adam, 16</span>
-                  <img src="rating.png" alt="rating" width="120px;" class="my-1">
+                  <img src="pictures/rating.png" alt="rating" width="120px;" class="my-1">
                   <span class="text-lg">$5.99</span>
                   <span class="text-xs text-gray-500 line-through">$1337.42</span>
                   
                   <span class="text-xs text-gray-500 flex items-center">
-                    <img class="-ml-1 mb-1" src="prime.png" width="60px;" alt="prime">
+                    <img class="-ml-1 mb-1" src="pictures/prime.png" width="60px;" alt="prime">
                      &nbsp; FREE One-Hour Delivery
                 </span>
                 <span class="text-xs text-gray-500">Meet Today</span>
                 </div>
               </div>
-
-              <div class="bg-white shadow-md card-width flex-grow tre:w-64">
-                <img src="heman.png" alt="heman" class=" h-auto">
+            
+              <div class="bg-white shadow-md card-width flex-grow">
+                <img src="pictures/heman.png" alt="heman" class="h-auto">
                 <div class="pb-4">
                   <span class="text-lg">Adam, 16</span>
-                  <img src="rating.png" alt="rating" width="120px;" class="my-1">
+                  <img src="pictures/rating.png" alt="rating" width="120px;" class="my-1">
                   <span class="text-lg">$5.99</span>
                   <span class="text-xs text-gray-500 line-through">$1337.42</span>
                   
                   <span class="text-xs text-gray-500 flex items-center">
-                    <img class="-ml-1 mb-1" src="prime.png" width="60px;" alt="prime">
+                    <img class="-ml-1 mb-1" src="pictures/prime.png" width="60px;" alt="prime">
                      &nbsp; FREE One-Hour Delivery
                 </span>
                 <span class="text-xs text-gray-500">Meet Today</span>
                 </div>
               </div>
-
-              <div class="bg-white shadow-md card-width flex-grow tre:w-64">
-                <img src="heman.png" alt="heman" class=" h-auto">
+            
+              <div class="bg-white shadow-md card-width flex-grow">
+                <img src="pictures/heman.png" alt="heman" class="h-auto">
                 <div class="pb-4">
                   <span class="text-lg">Adam, 16</span>
-                  <img src="rating.png" alt="rating" width="120px;" class="my-1">
+                  <img src="pictures/rating.png" alt="rating" width="120px;" class="my-1">
                   <span class="text-lg">$5.99</span>
                   <span class="text-xs text-gray-500 line-through">$1337.42</span>
                   
                   <span class="text-xs text-gray-500 flex items-center">
-                    <img class="-ml-1 mb-1" src="prime.png" width="60px;" alt="prime">
+                    <img class="-ml-1 mb-1" src="pictures/prime.png" width="60px;" alt="prime">
                      &nbsp; FREE One-Hour Delivery
                 </span>
                 <span class="text-xs text-gray-500">Meet Today</span>
                 </div>
               </div>
-
-              <div class="bg-white shadow-md card-width flex-grow tre:w-64">
-                <img src="heman.png" alt="heman" class=" h-auto">
+            
+              <div class="bg-white shadow-md card-width flex-grow">
+                <img src="pictures/heman.png" alt="heman" class="h-auto">
                 <div class="pb-4">
                   <span class="text-lg">Adam, 16</span>
-                  <img src="rating.png" alt="rating" width="120px;" class="my-1">
+                  <img src="pictures/rating.png" alt="rating" width="120px;" class="my-1">
                   <span class="text-lg">$5.99</span>
                   <span class="text-xs text-gray-500 line-through">$1337.42</span>
                   
                   <span class="text-xs text-gray-500 flex items-center">
-                    <img class="-ml-1 mb-1" src="prime.png" width="60px;" alt="prime">
+                    <img class="-ml-1 mb-1" src="pictures/prime.png" width="60px;" alt="prime">
                      &nbsp; FREE One-Hour Delivery
                 </span>
                 <span class="text-xs text-gray-500">Meet Today</span>
                 </div>
               </div>
-
+            
+              <div class="bg-white shadow-md card-width flex-grow">
+                <img src="pictures/heman.png" alt="heman" class="h-auto">
+                <div class="pb-4">
+                  <span class="text-lg">Adam, 16</span>
+                  <img src="pictures/rating.png" alt="rating" width="120px;" class="my-1">
+                  <span class="text-lg">$5.99</span>
+                  <span class="text-xs text-gray-500 line-through">$1337.42</span>
+                  
+                  <span class="text-xs text-gray-500 flex items-center">
+                    <img class="-ml-1 mb-1" src="pictures/prime.png" width="60px;" alt="prime">
+                     &nbsp; FREE One-Hour Delivery
+                </span>
+                <span class="text-xs text-gray-500">Meet Today</span>
+                </div>
+              </div>
+            
+              <div class="bg-white shadow-md card-width flex-grow">
+                <img src="pictures/heman.png" alt="heman" class="h-auto">
+                <div class="pb-4">
+                  <span class="text-lg">Adam, 16</span>
+                  <img src="pictures/rating.png" alt="rating" width="120px;" class="my-1">
+                  <span class="text-lg">$5.99</span>
+                  <span class="text-xs text-gray-500 line-through">$1337.42</span>
+                  
+                  <span class="text-xs text-gray-500 flex items-center">
+                    <img class="-ml-1 mb-1" src="pictures/prime.png" width="60px;" alt="prime">
+                     &nbsp; FREE One-Hour Delivery
+                </span>
+                <span class="text-xs text-gray-500">Meet Today</span>
+                </div>
+              </div>
+            
+              <div class="bg-white shadow-md card-width flex-grow">
+                <img src="pictures/heman.png" alt="heman" class="h-auto">
+                <div class="pb-4">
+                  <span class="text-lg">Adam, 16</span>
+                  <img src="pictures/rating.png" alt="rating" width="120px;" class="my-1">
+                  <span class="text-lg">$5.99</span>
+                  <span class="text-xs text-gray-500 line-through">$1337.42</span>
+                  
+                  <span class="text-xs text-gray-500 flex items-center">
+                    <img class="-ml-1 mb-1" src="pictures/prime.png" width="60px;" alt="prime">
+                     &nbsp; FREE One-Hour Delivery
+                </span>
+                <span class="text-xs text-gray-500">Meet Today</span>
+                </div>
+              </div>
+            
+              <div class="bg-white shadow-md card-width flex-grow">
+                <img src="pictures/heman.png" alt="heman" class="h-auto">
+                <div class="pb-4">
+                  <span class="text-lg">Adam, 16</span>
+                  <img src="pictures/rating.png" alt="rating" width="120px;" class="my-1">
+                  <span class="text-lg">$5.99</span>
+                  <span class="text-xs text-gray-500 line-through">$1337.42</span>
+                  
+                  <span class="text-xs text-gray-500 flex items-center">
+                    <img class="-ml-1 mb-1" src="pictures/prime.png" width="60px;" alt="prime">
+                     &nbsp; FREE One-Hour Delivery
+                </span>
+                <span class="text-xs text-gray-500">Meet Today</span>
+                </div>
+              </div>
+            
+              <div class="bg-white shadow-md card-width flex-grow">
+                <img src="pictures/heman.png" alt="heman" class="h-auto">
+                <div class="pb-4">
+                  <span class="text-lg">Adam, 16</span>
+                  <img src="pictures/rating.png" alt="rating" width="120px;" class="my-1">
+                  <span class="text-lg">$5.99</span>
+                  <span class="text-xs text-gray-500 line-through">$1337.42</span>
+                  
+                  <span class="text-xs text-gray-500 flex items-center">
+                    <img class="-ml-1 mb-1" src="pictures/prime.png" width="60px;" alt="prime">
+                     &nbsp; FREE One-Hour Delivery
+                </span>
+                <span class="text-xs text-gray-500">Meet Today</span>
+                </div>
+              </div>
+            
+              <div class="bg-white shadow-md card-width flex-grow">
+                <img src="pictures/heman.png" alt="heman" class="h-auto">
+                <div class="pb-4">
+                  <span class="text-lg">Adam, 16</span>
+                  <img src="pictures/rating.png" alt="rating" width="120px;" class="my-1">
+                  <span class="text-lg">$5.99</span>
+                  <span class="text-xs text-gray-500 line-through">$1337.42</span>
+                  
+                  <span class="text-xs text-gray-500 flex items-center">
+                    <img class="-ml-1 mb-1" src="pictures/prime.png" width="60px;" alt="prime">
+                     &nbsp; FREE One-Hour Delivery
+                </span>
+                <span class="text-xs text-gray-500">Meet Today</span>
+                </div>
+              </div>
+            
+              <div class="bg-white shadow-md card-width flex-grow">
+                <img src="pictures/not_woody.png" alt="not woody" class="h-auto">
+                <div class="pb-4">
+                  <span class="text-lg">Tiffany, 21</span>
+                  <img src="pictures/rating_5.png" alt="rating" width="120px;" class="my-1">
+                  <span class="text-lg">$20</span>
+                
+                  <span class="text-xs text-gray-500 flex items-center">
+                    <img class="-ml-1 mb-1" src="pictures/prime.png" width="60px;" alt="prime">
+                     &nbsp; FREE One-Hour Delivery
+                </span>
+                <span class="text-xs text-gray-500">Meet Today</span>
+                </div>
+              </div>
+            
+              <div class="bg-white shadow-md card-width flex-grow">
+                <img src="pictures/heman.png" alt="heman" class="h-auto">
+                <div class="pb-4">
+                  <span class="text-lg">Adam, 16</span>
+                  <img src="pictures/rating.png" alt="rating" width="120px;" class="my-1">
+                  <span class="text-lg">$5.99</span>
+                  <span class="text-xs text-gray-500 line-through">$1337.42</span>
+                  
+                  <span class="text-xs text-gray-500 flex items-center">
+                    <img class="-ml-1 mb-1" src="pictures/prime.png" width="60px;" alt="prime">
+                     &nbsp; FREE One-Hour Delivery
+                </span>
+                <span class="text-xs text-gray-500">Meet Today</span>
+                </div>
+              </div>
+            
+              <div class="bg-white shadow-md card-width flex-grow">
+                <img src="pictures/bjorkman.png" alt="björkman" class="h-auto">
+                <div class="pb-4">
+                  <span class="text-lg">Björkman, 56</span>
+                  <img src="pictures/rating_5.png" alt="rating" width="120px;" class="my-1">
+                  <span class="text-lg">$69.99</span>
+                  <span class="text-xs text-gray-500 line-through">$44</span>
+                  
+                  <span class="text-xs text-gray-500 flex items-center">
+                    <img class="-ml-1 mb-1" src="pictures/prime.png" width="60px;" alt="prime">
+                     &nbsp; FREE One-Hour Delivery
+                </span>
+                <span class="text-xs text-gray-500">Meet Today</span>
+                </div>
+              </div>
+            
+              <div class="bg-white shadow-md card-width flex-grow">
+                <img src="pictures/heman.png" alt="heman" class="h-auto">
+                <div class="pb-4">
+                  <span class="text-lg">Adam, 16</span>
+                  <img src="pictures/rating.png" alt="rating" width="120px;" class="my-1">
+                  <span class="text-lg">$5.99</span>
+                  <span class="text-xs text-gray-500 line-through">$1337.42</span>
+                  
+                  <span class="text-xs text-gray-500 flex items-center">
+                    <img class="-ml-1 mb-1" src="pictures/prime.png" width="60px;" alt="prime">
+                     &nbsp; FREE One-Hour Delivery
+                </span>
+                <span class="text-xs text-gray-500">Meet Today</span>
+                </div>
+              </div>
+            
+              <div class="bg-white shadow-md card-width flex-grow">
+                <img src="pictures/heman.png" alt="heman" class="h-auto">
+                <div class="pb-4">
+                  <span class="text-lg">Adam, 16</span>
+                  <img src="pictures/rating.png" alt="rating" width="120px;" class="my-1">
+                  <span class="text-lg">$5.99</span>
+                  <span class="text-xs text-gray-500 line-through">$1337.42</span>
+                  
+                  <span class="text-xs text-gray-500 flex items-center">
+                    <img class="-ml-1 mb-1" src="pictures/prime.png" width="60px;" alt="prime">
+                     &nbsp; FREE One-Hour Delivery
+                </span>
+                <span class="text-xs text-gray-500">Meet Today</span>
+                </div>
+              </div>
+            
+              <div class="bg-white shadow-md card-width flex-grow">
+                <img src="pictures/heman.png" alt="heman" class="h-auto">
+                <div class="pb-4">
+                  <span class="text-lg">Adam, 16</span>
+                  <img src="pictures/rating.png" alt="rating" width="120px;" class="my-1">
+                  <span class="text-lg">$5.99</span>
+                  <span class="text-xs text-gray-500 line-through">$1337.42</span>
+                  
+                  <span class="text-xs text-gray-500 flex items-center">
+                    <img class="-ml-1 mb-1" src="pictures/prime.png" width="60px;" alt="prime">
+                     &nbsp; FREE One-Hour Delivery
+                </span>
+                <span class="text-xs text-gray-500">Meet Today</span>
+                </div>
+              </div>
+            
+              <div class="bg-white shadow-md card-width flex-grow">
+                <img src="pictures/heman.png" alt="heman" class="h-auto">
+                <div class="pb-4">
+                  <span class="text-lg">Adam, 16</span>
+                  <img src="pictures/rating.png" alt="rating" width="120px;" class="my-1">
+                  <span class="text-lg">$5.99</span>
+                  <span class="text-xs text-gray-500 line-through">$1337.42</span>
+                  
+                  <span class="text-xs text-gray-500 flex items-center">
+                    <img class="-ml-1 mb-1" src="pictures/prime.png" width="60px;" alt="prime">
+                     &nbsp; FREE One-Hour Delivery
+                </span>
+                <span class="text-xs text-gray-500">Meet Today</span>
+                </div>
+              </div>
+            
+              <div class="bg-white shadow-md card-width flex-grow">
+                <img src="pictures/heman.png" alt="heman" class="h-auto">
+                <div class="pb-4">
+                  <span class="text-lg">Adam, 16</span>
+                  <img src="pictures/rating.png" alt="rating" width="120px;" class="my-1">
+                  <span class="text-lg">$5.99</span>
+                  <span class="text-xs text-gray-500 line-through">$1337.42</span>
+                  
+                  <span class="text-xs text-gray-500 flex items-center">
+                    <img class="-ml-1 mb-1" src="pictures/prime.png" width="60px;" alt="prime">
+                     &nbsp; FREE One-Hour Delivery
+                </span>
+                <span class="text-xs text-gray-500">Meet Today</span>
+                </div>
+              </div>
+            
+              <div class="bg-white shadow-md card-width flex-grow">
+                <img src="pictures/heman.png" alt="heman" class="h-auto">
+                <div class="pb-4">
+                  <span class="text-lg">Adam, 16</span>
+                  <img src="pictures/rating.png" alt="rating" width="120px;" class="my-1">
+                  <span class="text-lg">$5.99</span>
+                  <span class="text-xs text-gray-500 line-through">$1337.42</span>
+                  
+                  <span class="text-xs text-gray-500 flex items-center">
+                    <img class="-ml-1 mb-1" src="pictures/prime.png" width="60px;" alt="prime">
+                     &nbsp; FREE One-Hour Delivery
+                </span>
+                <span class="text-xs text-gray-500">Meet Today</span>
+                </div>
+              </div>
+            
+              <div class="bg-white shadow-md card-width flex-grow">
+                <img src="pictures/heman.png" alt="heman" class="h-auto">
+                <div class="pb-4">
+                  <span class="text-lg">Adam, 16</span>
+                  <img src="pictures/rating.png" alt="rating" width="120px;" class="my-1">
+                  <span class="text-lg">$5.99</span>
+                  <span class="text-xs text-gray-500 line-through">$1337.42</span>
+                  
+                  <span class="text-xs text-gray-500 flex items-center">
+                    <img class="-ml-1 mb-1" src="pictures/prime.png" width="60px;" alt="prime">
+                     &nbsp; FREE One-Hour Delivery
+                </span>
+                <span class="text-xs text-gray-500">Meet Today</span>
+                </div>
+              </div>
+            
+              <div class="bg-white shadow-md card-width flex-grow">
+                <img src="pictures/heman.png" alt="heman" class="h-auto">
+                <div class="pb-4">
+                  <span class="text-lg">Adam, 16</span>
+                  <img src="pictures/rating.png" alt="rating" width="120px;" class="my-1">
+                  <span class="text-lg">$5.99</span>
+                  <span class="text-xs text-gray-500 line-through">$1337.42</span>
+                  
+                  <span class="text-xs text-gray-500 flex items-center">
+                    <img class="-ml-1 mb-1" src="pictures/prime.png" width="60px;" alt="prime">
+                     &nbsp; FREE One-Hour Delivery
+                </span>
+                <span class="text-xs text-gray-500">Meet Today</span>
+                </div>
+              </div>
+            
+              <div class="bg-white shadow-md card-width flex-grow">
+                <img src="pictures/heman.png" alt="heman" class="h-auto">
+                <div class="pb-4">
+                  <span class="text-lg">Adam, 16</span>
+                  <img src="pictures/rating.png" alt="rating" width="120px;" class="my-1">
+                  <span class="text-lg">$5.99</span>
+                  <span class="text-xs text-gray-500 line-through">$1337.42</span>
+                  
+                  <span class="text-xs text-gray-500 flex items-center">
+                    <img class="-ml-1 mb-1" src="pictures/prime.png" width="60px;" alt="prime">
+                     &nbsp; FREE One-Hour Delivery
+                </span>
+                <span class="text-xs text-gray-500">Meet Today</span>
+                </div>
+              </div>
+            
+              <div class="bg-white shadow-md card-width flex-grow">
+                <img src="pictures/heman.png" alt="heman" class="h-auto">
+                <div class="pb-4">
+                  <span class="text-lg">Adam, 16</span>
+                  <img src="pictures/rating.png" alt="rating" width="120px;" class="my-1">
+                  <span class="text-lg">$5.99</span>
+                  <span class="text-xs text-gray-500 line-through">$1337.42</span>
+                  
+                  <span class="text-xs text-gray-500 flex items-center">
+                    <img class="-ml-1 mb-1" src="pictures/prime.png" width="60px;" alt="prime">
+                     &nbsp; FREE One-Hour Delivery
+                </span>
+                <span class="text-xs text-gray-500">Meet Today</span>
+                </div>
+              </div>
               
         </div>
                 
